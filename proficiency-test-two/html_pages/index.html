@@ -7,6 +7,23 @@
     <title>CSV Generator</title>
 </head>
 <body>
-    <h2>hello</h2>
+    <h1>Create File</h1>
+    <form action="/files/generate/file" method="post">
+        <label for="count">Enter Number of elements</label>
+        <input type="text" id="count" name="count">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <br>
+    <h1>Upload File</h1>
+    <div>
+        <form action="/upload/file" method="post">
+            <input type="file" id="myFile" name="file">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
